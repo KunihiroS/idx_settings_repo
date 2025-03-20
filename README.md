@@ -5,6 +5,15 @@
 https://idx.google.com/
 IDXはアクセス元のPCの違いや開くリポジトリの違いによりデフォルト設定で開く可能性があります。
 
+## 使い方
+1. IDXを任意のRepoで起動します。
+2. IDXのワークスペースがデフォルトであることを確認します。(この際デフォルトのdev.nixが idx/ に作成されます)
+3. 本リポジトリをクローンします。
+```bash
+git clone https://github.com/KunihiroS/idx_settings_repo.git
+```
+4. 
+
 ## Settings
 ### settings.json
 /User/ に配置される IDE の設定を保存するファイル
