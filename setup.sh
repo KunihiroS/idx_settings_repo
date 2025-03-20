@@ -27,3 +27,13 @@ mkdir -p "$TARGET_DIR"  # Create directory if it doesn't exist
 cp "$SCRIPT_DIR/cline_mcp_settings.json" "$TARGET_DIR/"
 
 echo "IDX settings setup completed."
+
+# 1000ms wait
+echo "Waiting for 1 second..."
+sleep 1
+
+# Restart IDX
+echo "Restarting IDX..."
+idx restart
+
+echo "IDX restart completed."
