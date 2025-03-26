@@ -5,7 +5,11 @@
 This repository aims to automate the configuration of Google IDX settings.  
 [https://idx.google.com/](https://idx.google.com/)
 may open with default settings depending on the accessing PC or the repository being opened.  
-By executing the steps in this repository, it is possible to automatically apply a part of custom settings and rebuild the IDX workspace.
+By executing the steps in this repository, it is possible to automatically apply a part of custom settings as below and rebuild the IDX workspace.
+
+- dev.nix
+- cline_mcp_settings.json
+- settings.json (not automatic)
 
 This repo helps you to less copy and paste.
 
@@ -27,8 +31,6 @@ This repo helps you to less copy and paste.
     ./idx_settings_repo/setup.sh
     ```
 5.  Perform an IDX Rebuild to enable the features described in `dev.nix` and confirm the MCP Server settings.
-6.  (Optional) If necessary, overwrite the IDE settings with `idx_settings_repo/settings.json`.
-    However, overwriting `settings.json` directly requires careful consideration.
 
 ## Files for setup
 
