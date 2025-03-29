@@ -16,6 +16,14 @@ if [ -f .idx/dev.nix ]; then
   mv .idx/dev.nix .idx/dev.nix.bak
 fi
 cp "$SCRIPT_DIR/dev.nix" .idx/
+# Copy airules.md (symbolic link is also acceptable)
+# Backup existing file if present
+if [ -f .idx/airules.md ]; then
+  mv .idx/airules.md .idx/airules.md.bak
+fi
+cp "$SCRIPT_DIR/airules.md" .idx/
+
+
 
 # Copy cline_mcp_settings.json (symbolic link is also acceptable)
 # Backup existing file if present
